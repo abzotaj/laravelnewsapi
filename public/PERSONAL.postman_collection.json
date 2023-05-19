@@ -7,45 +7,13 @@
 	},
 	"item": [
 		{
-			"name": "CREATE_PLAYER",
-			"request": {
-				"method": "POST",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\n    \"name\": \"Ardit Z\",\n    \"email\": \"arditzotaj@gmail.com\",\n    \"categories\": [{\n        \"name\": \"ABC\"\n    }]\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": {
-					"raw": "http://0.0.0.0:8000/api/players",
-					"protocol": "http",
-					"host": [
-						"0",
-						"0",
-						"0",
-						"0"
-					],
-					"port": "8000",
-					"path": [
-						"api",
-						"players"
-					]
-				}
-			},
-			"response": []
-		},
-		{
 			"name": "LOGIN_USER",
 			"request": {
 				"method": "POST",
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"email\": \"arditzotaj+changed6@gmail.com\",\n    \"password\": \"!Mistr3ci\"\n}",
+					"raw": "{\n    \"email\": \"arditzotaj+changed6@gmail.com\",\n    \"password\": \"Abcd12344\"\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -78,7 +46,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"email\": \"arditzotaj@gmail.com\",\n    \"name\": \"Ardit\",\n    \"password\": \"!Mistr3ci\",\n    \"news_sources\":[\n        {\n            \"source_name\": \"NyTimes.com\",\n            \"source_tag\": \"NY_TIMES\"\n        },\n        {\n            \"source_name\": \"The Guardian\",\n            \"source_tag\": \"THE_GUARDIAN\"\n        }\n    ]\n}",
+					"raw": "{\n    \"email\": \"arditzotaj@gmail.com\",\n    \"name\": \"Ardit\",\n    \"password\": \"Abcd12348\",\n    \"news_sources\":[\n        {\n            \"source_name\": \"NyTimes.com\",\n            \"source_tag\": \"NY_TIMES\"\n        },\n        {\n            \"source_name\": \"The Guardian\",\n            \"source_tag\": \"THE_GUARDIAN\"\n        }\n    ]\n}",
 					"options": {
 						"raw": {
 							"language": "json"

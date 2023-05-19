@@ -9,7 +9,10 @@ WORKDIR /var/www/html
 COPY . .
 
 RUN chown -R www-data:www-data /var/www/html/storage /var/www/html/bootstrap/cache
-CMD php artisan config:clear
-CMD php artisan config:cache
-CMD php artisan key:generate
-CMD php artisan serve --host=0.0.0.0 --port=8000
+RUN php artisan cache:clear
+RUN php artisan config:clear
+RUN php artisan config:cache
+RUN php artisan key:generate
+
+CMD php artisan migrate_in_order && php artisan serve --host=0.0.0.0 --port=8000
+

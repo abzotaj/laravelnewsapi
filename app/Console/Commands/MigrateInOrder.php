@@ -39,12 +39,9 @@ class MigrateInOrder extends Command
     {
         $migrations = [
             'create_failed_jobs_table.php',
-            'create_players_table.php',
             'create_users_table.php',
             'create_news_sources_table.php',
-            'create_categories_table.php',
             'create_user_news_sources_table.php',
-            'create_user_categories_table.php',
             'create_personal_access_tokens.php'
         ];
 
